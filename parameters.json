@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "southeastasia"
+        },
+        "virtualMachineName": {
+            "value": "WebSrv-LB-VM1"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "dssadmin"
+        },
+        "virtualNetworkName": {
+            "value": "SoftechVNet"
+        },
+        "networkInterfaceName": {
+            "value": "websrv-lb-vm1910"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "availabilitySetName": {
+            "value": "WebSrvAvailabilitySet"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": "2"
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": "5"
+        },
+        "storageAccountName": {
+            "value": "virtualdiskstorageac"
+        },
+        "storageAccountType": {
+            "value": "Premium_LRS"
+        },
+        "subnetName": {
+            "value": "FrontEndSubnet"
+        },
+        "publicIpAddressName": {
+            "value": "WebSrv-LB-VM1-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "publicIpAddressSku": {
+            "value": "Basic"
+        }
+    }
+}
